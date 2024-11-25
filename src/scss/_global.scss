@@ -1,0 +1,16 @@
+body {
+    font-family: 'Poppins';
+    color: $white-color;
+} 
+
+.wrapper {
+    background: $main-bg;
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+

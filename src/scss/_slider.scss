@@ -1,0 +1,112 @@
+.slider {
+    padding: 90px 0;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+    }
+  
+    &__cards {
+        display: flex;
+
+        .slider__card {
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            overflow: hidden;
+            background: $second-bg;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
+            &-image {
+                height: 280px;
+                border-bottom-right-radius: 30px;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &-info {
+                padding: 30px 35px;
+                font-size: 18px;
+                flex-grow: 1;
+
+                .slider__card-title {
+                    font-weight: 700;
+                    color: $white-color;
+                    opacity: 0.5;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+
+                .slider__card-subtitle {
+                    font-weight: 500;
+                }
+            }
+
+            .slider__card-wrap {
+                display: flex;
+                justify-content: space-between;
+
+                .slider__card-data {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $white-color;
+                    opacity: 0.5;
+                    text-transform: uppercase;
+                    flex: 1 1 45%;
+                    padding: 17px;
+                    text-align: center;
+                }
+
+                .slider__card-button {
+                    border-top-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    background: $brand-color;
+                    flex: 1 1 45%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .slider__card-btn {
+                        display: block;
+                        padding: 18px;
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $white-color;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slider .swiper-button {
+    width: 40px;
+    height: 60px;
+    border: 1px solid $white-color;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: static;
+    flex-shrink: 0;
+
+    &::after {
+        content: none;
+    }
+}
+
+.slider .swiper-button-prev  {
+    background: url(/src/img/arrow-left.png) no-repeat 50%;
+}
+
+
+.slider .swiper-button-next {
+    background: url(/src/img/arrow-right.png) no-repeat 50%;
+}
